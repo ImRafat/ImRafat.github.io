@@ -1,1 +1,386 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICDC Masjid | Islamic Center of Delaware County</title>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/index.css?v=9">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/app.js?v=19"></script>
+    <link type="image/png" sizes="96x96" rel="icon" href="./content/mosque.png">
+    <link rel="canonical" href="https://icdcmasjid.org/">
+
+</head>
+<body>    
+    <a href="https://mrafat.com" style="display:none">THIS WEBSITE WAS DEVELOPED BY MOHAMMED RAFAT. https://mrafat.com</a>
+    <section id="landingContent">
+        <nav>
+            <div class="container">
+                <div class="row navigationContent">
+                    <!-- <a href="index.html" class="logoContainer logo"> ICDC</a> -->
+                    <!-- <a href="index.html" class="logoContainer logo"> </a> -->
+                    <img src="./content/L3 Transparent.png" class="logoContainer logo"alt="">
+                    <!-- <img src="./content/L3 2 Transparent.png" class="logoContainer logo"alt=""> -->
+                    <div class="navigationLinks">
+                        <a href="./pages/prayertime.html" class="navigationLink">Prayer Time</a>
+                        <a href="#aboutUs" class="navigationLink">About Us</a>
+                        <a href="#services" class="navigationLink">Services</a>
+                        <!-- <a href="#constructionStatus" class="navigationLink">Construction Status</a> -->
+                        <a href="#school" class="navigationLink">Education</a> 
+                        <a href="#donate" class=" navigationLink customDonate">Donate</a>                   
+                    </div>
+                    <div class="barsContainer">
+                        <a href="#donate" class=" customDonate">Donate</a>   
+                        <button class="btn__menu" onclick="openMenu()">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a href="#school" class="menu__link schoolLink" onclick="closeMenu()">Education</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="https://gtaf.org/blog/first-10-days-of-dhul-hijjah/" class="menu__link dhulHijjah" target="_blank" onclick="closeMenu()">Dhul Hijjah Instructions</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="./pages/prayertime.html" class="menu__link prayerTimeLink" onclick="closeMenu()">Prayer Time</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#aboutUs" class="menu__link aboutUsLink" onclick="closeMenu()">About Us</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#services" class="menu__link servicesLink" onclick="closeMenu()">Services</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#footer" class="menu__link footerLink" onclick="closeMenu()">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="landingTheme">
+            <div class="container">
+                <div class="landingThemeContent row">
+                    <div class="swiper">
+                          <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <!-- <div class="swiper-slide mainSlide" id="mainSlide" >
+                                <img src="./content/family night.jpeg" alt="" class="mainSliderImage">
+                            </div>     -->         
+                            <div class="swiper-slide firstSlide" id="firstSlide" >
+                                <img src="./content/mosque2.jpg" alt="mosque picture" class="sliderImage">
+                                <div class="firstSlideContent">
+                                    <h1>Hadith</h1>
+                                    <p class="staticHadith">“Whoever opens a way to a charitable deed is like the one that has done this good deed (himself).”</p>                                    
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-slide secondSlide" id="secondSlide">
+                                <div class="secondSlideContent">                                    
+                                    <img src="./content/MasjidOpening.png" alt="mosque opening picture" class="secondSliderImage">                                    
+                                </div>
+                            </div> -->
+                            <div class="swiper-slide secondSlide" id="secondSlide">
+                                <div class="secondSlideContent">                                    
+                                    <img src="./content/brothers.jpg" alt="brothers prayer section" class="secondSliderImage">                                    
+                                </div>
+                            </div>
+                            <div class="swiper-slide thirdSlide" id="thirdSlide">
+                                <div class="thirdSlideContent">                        
+                                    <img src="./content/sisters.jpg" alt="sisters prayer section" class="thirdSliderImage">                                                 
+                                </div>
+                            </div>                          
+                            <div class="swiper-slide fourthSlide" id="fourthSlide">
+                                <div class="fourthSlideContent">                                    
+                                    <img src="./content/masjid1.jpg" alt="people in the mosque" class="fourthSliderImage">  
+                                </div>
+                            </div>  
+
+                          </div>
+                          <!-- If we need pagination -->
+                          <div class="swiper-pagination"></div>
+                        
+                          <!-- If we need navigation buttons -->
+                          <div class="swiper-button-prev swiperArrows" id="buttonPrevious"></div>
+                          <div class="swiper-button-next swiperArrows" id="buttonNext" onClick="return false;"></div>                        
+                    </div>                    
+                    <div class="prayerSchedule" id="prayerSchedule">
+                        <ul class="sunrise">
+                            <li class="logoPrayer"><img src="./content/sunrise.png" alt="sunrise logo" class="prayerLogo"> <span class="prayerName">Sunrise</span> </li>
+                            <li class="sunriseTime"></li>
+                        </ul>
+                        <ul class="prayerColumnHeaders">
+                            <li class="salahHeader">Salah</li>
+                            <li class="beginsHeader">Begins</li>
+                            <li class="iqamahHeader">Iqamah</li>
+                        </ul>
+                        <ul class="prayerContent defaultFontSize">
+                            <ul class="prayerTime fajrPrayer">
+                                <li class="logoPrayer"><img src="./content/dawn.png" alt="dawn logo" class="prayerLogo"><span class="prayerName"> Fajr</span></li>
+                                <li class="begins"></li>
+                                <li class="iqamah"></li>
+                            </ul>
+                            <ul class="prayerTime dhuhrPrayer">
+                                <li class="logoPrayer"><img src="./content/day.png" alt="day time logo" class="prayerLogo"><span class="prayerName">Dhuhr</span></li>
+                                <li class="begins"></li>
+                                <li class="iqamah"></li>
+                            </ul>
+                            <ul class="prayerTime asrPrayer">
+                                <li class="logoPrayer"><img src="./content/evening.png" alt="evening logo" class="prayerLogo"><span class="prayerName">Asr</span></li>
+                                <li class="begins"></li>
+                                <li class="iqamah"></li>
+                            </ul>
+                            <ul class="prayerTime maghribPrayer">
+                                <li class="logoPrayer"><img src="./content/sunset.png" alt="sunset logo" class="prayerLogo"><span class="prayerName">Maghrib</span></li>
+                                <li class="begins"></li>
+                                <li class="iqamah"></li>
+                            </ul>
+                            <ul class="prayerTime ishaPrayer">
+                                <li class="logoPrayer"><img src="./content/night.png" alt="night time logo" class="prayerLogo"><span class="prayerName">Isha</span></li>
+                                <li class="begins"></li>
+                                <li class="iqamah"></li>
+                            </ul>
+                        </ul>
+                        <div class="jumuahSchedule">
+                            <!-- <h1 class="jumuahHeader">Jumuah</h1> -->
+                            <ul class="jumuahContent defaultFontSize">
+                                <!-- <ul class="jumuahSection">
+                                    <li class="khutbah">Khutbah</li>
+                                    <li class="jumuahTime">1:10 PM</li>
+                                </ul> -->
+                                <ul class="jumuahSection">
+                                    <li class="jumuahPrayer jumuahHeader logoPrayer">Jumuah</li>
+                                    <li class="jumuahTime begins"></li>
+                                    <li class="iqamah"></li>
+                                </ul>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="tempInfo">
+        <div class="container ">                                
+            <div class="row tempInfoContent">         
+                <div class="halfWidth tempInfoDescription">  
+                    <h1 class="sectionHeader">Dhul Hijjah Instruction</h1>
+                    <p class="sectionDescription">                   
+                        Importance of the First Ten Days of Dhul Hijjah. If you want to know what needs to be done the first 10 days then please follow this link for more info.
+                        <a href="https://gtaf.org/blog/first-10-days-of-dhul-hijjah/" target="_blank" style="text-decoration: underline;">First Ten Days of Dhul Hijjah</a>
+                    </p>                   
+                </div>         
+            </div>                         
+        </div>
+    </section> -->
+
+    <!-- <section id="flyer">
+        <div class="container">
+            <img class="tempImage" src="./content/family night.jpeg" alt="family night flyer">
+        </div>
+    </section> -->
+    <!--
+    <section id="school">
+        <div class="container">                                
+            <div class="row schoolContent">                 
+                <div class="sectionContent">  
+                    <h1 class="sectionHeader">Ramadan Calendar</h1>
+                    <p class="sectionDescription">                                           
+                        Ramadan Kareem! Please see below calendar for the month of Ramadan.
+                    </p>   
+                    <img class="tempImage schoolImage" src="./content/ramadan schedule 2024.jpg" alt="after school program registration" >
+                </div>                    
+            </div>
+        </div>
+    </section>
+-->
+    <section id="aboutUs">
+            <div class="container">                                
+                <div class="row aboutusContent">                 
+                    <div class="sectionContent">  
+                        <h1 class="sectionHeader">About Us</h1>
+                        <p class="sectionDescription">                   
+                            ICDC is a reliable Islamic Center to follow the Quran and Sunnah. Islamic Center of Delaware County is a non-profit 
+                            tax-exempt organization that has been formed exclusively for educational, religious, 
+                            and social purposes. It is registered with the Internal Revenue Service under revenue code 501(c)(3). All of ICDC's activities are in accordance with the teachings of the 
+                            Quran and following the teachings and traditions of Prophet Muhammad (Peace Be Upon Him). Please donate generously to help us 
+                            build/maintain this center so that we can spread the knowledge of Islam to the community and provide a location people can come together to learn and grow to become good practicing Muslims. We are located right across from the large 
+                            shopping center at township line road.
+                        </p>   
+                        <a class="embeddedLink" href="https://goo.gl/maps/NydAewC7qgQLpDuh6" target="__blank"><img src="./content/location.png" class="locationImage">Islamic Center of Delaware County</a>
+                    </div>                    
+                </div>
+            </div>
+    </section>
+
+    <section id="donate">
+        <div class="container">
+            <div class="row donateContent">
+                <div class="sectionContent">
+                     <h1 class="sectionHeader"> Donate</h1>
+                     <p class="sectionDescription">
+                        Prophet Muhammad (Peace be upon him) once said, <i>“Whoever builds a Masjid for the sake of Allah, Allah will build for him a house in Paradise.” </i> &nbspYou can take part in building/maintaining a masjid for 
+                        the community and benefiting from it in this life and the next. You can securely donate by card or PayPal through PayPal directly. You will not have to create an account to do so. You can also do the same for apple pay, google pay, card or cash app as well through the square payment method without having to create an account.
+                     </p>
+                     <div class="donateMethods">
+                        <a href="https://checkout.square.site/merchant/9ZHZXRPV5K7DD/checkout/I4VBPMSUZIFEKEYSK3ECBNR5?src=qr" target="_blank" class="donateLinkDesktop">
+                            <span>Card, Google or Cash App</span> 
+                            <div class="logos">
+                                <img src="./content/card.png" class="donateImage" alt="card picture"> 
+                                <img src="./content/google.png" class="donateImage" alt="google picture"> 
+                                <img src="./content/cashApp.png" class="donateImage" alt="cashapp picture"> 
+                            </div>
+                        </a> 
+                        <a href="https://checkout.square.site/merchant/9ZHZXRPV5K7DD/checkout/I4VBPMSUZIFEKEYSK3ECBNR5?src=qr" target="_blank" class="donateLinkMobile">
+                            <span>Card, Apple Pay, Google Pay or Cash App</span> 
+                            <div class="logos">
+                                <img src="./content/card.png" class="donateImage" alt="card picture"> 
+                                <img src="./content/apple.png" class="donateImage" alt="apple picture"> 
+                                <img src="./content/google.png" class="donateImage" alt="google picture"> 
+                                <img src="./content/cashApp.png" class="donateImage" alt="cashapp picture"> 
+                            </div>
+                        </a>                         
+                        <form action="https://www.paypal.com/donate" method="post" target="_blank" id="payPalForm">
+                            
+                            <a href="#" id="payPalButton" class="donateLink">
+                                <span>Card or PayPal</span>
+                                <div class="logos">
+                                    <img src="./content/card.png" class="donateImage" alt="card picture">
+                                    <img src="./content/paypal.png" class="donateImage" alt="paypal picture"> 
+                                </div>
+                                <input type="hidden" name="hosted_button_id" value="VH43LE3W7XRJN" />
+
+                            </a>
+                        </form>
+                        <div class="donatebyCheck">
+                            <li >Donate By Check To:</li>
+                            <li>Islamic Center of</li>
+                            <li>Delaware County</li>
+                            <li>2502 Township Line Road</li>
+                            <li>Havertown, PA 19083</li>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="fullPageWidth">
+        <div class="container">
+            <div class="row sectionContent">
+                <h1 class="sectionHeader">Services</h1>
+                <p class="sectionDescription">
+                    These are some of many services we provide at ICDC. If you would like to get more information, kindly reach out and we will do our best to help. If you would like to inquire about a service that is not listed 
+                    you can also contact us to find out more. 
+                </p>
+            </div>
+        </div>
+    </section>    
+
+    <section id="notes">
+        <div class="noteWrapperContainer">
+            <div class="noteWrapper row">
+                <div class="noteContent">
+                    <img src="./content/education.png" alt="reading a book picture">
+                    <h3 class="noteHeader">Education</h3>
+                    <p class="noteDescription">We provide educational services ranging from summer schools to sunday schools, along with routine lectures and teachings.</p>
+                    <div class="statusContainer">
+                        <a class="status" href="mailto:krahman@comcast.net?Subject=Education Service Request">Request Service</a>
+                    </div>
+                </div>
+                <div class="noteContent">
+                    <img src="./content/funeral.png" alt="burial picture">
+                    <h3 class="noteHeader">Funerals</h3>
+                    <p class="noteDescription">ICDC provides islamic funeral services to the delaware county area.</p> 
+                    <div class="statusContainer">
+                        <a class="status" href="mailto:krahman@comcast.net?Subject=Funeral Service Request">Request Service</a>
+                    </div>
+                </div>
+                <div class="noteContent">
+                    <img src="./content/muslim.png" alt="kabah picture">
+                    <h3 class="noteHeader">New Muslim Initiation</h3>
+                    <p class="noteDescription">If you would like to convert/revert to Islam. You can come to the islamic center and take the Shahada with the Imam. Please reach out to properly schedule.</p>
+                    <div class="statusContainer">
+                        <a class="status" href="mailto:krahman@comcast.net?Subject=New Muslim Initiation Service Request">Request Service</a>
+                    </div>           
+                </div>
+                <div class="noteContent">
+                    <img src="./content/marriage.png" alt="wedding ring picture">
+                    <h3 class="noteHeader">Marriage</h3>
+                    <p class="noteDescription">If you would like to perform islamic marriage, please reach out to properly schedule and to receive instructions.</p>
+                    <div class="statusContainer">
+                        <a class="status" href="mailto:krahman@comcast.net?Subject=Marriage Service Request">Request Service</a>
+                    </div>                 
+                </div>      
+                <div class="noteContent">
+                    <img src="./content/recreation.png" alt="basketball player picture">
+                    <h3 class="noteHeader">Recreational Activities</h3>
+                    <p class="noteDescription">We have a floor dedicated to recreational activities such as basketball.</p>
+                    <div class="statusContainer">
+                        <a class="status" href="mailto:krahman@comcast.net?Subject=Recreational Activities Service Request">Request Service</a>
+                    </div>      
+                </div>   
+                <div class="noteContent">
+                    <img src="./content/questions.png" alt="questions picture">
+                    <h3 class="noteHeader">Ask An Imam</h3>
+                    <p class="noteDescription">You can request advice from the Imam directly. Please send your question/statement and you will receive a response accordingly.</p>                 
+                    <div class="statusContainer">
+                        <a class="status" href="mailto:krahman@comcast.net?Subject=Ask An Imam">Request Service</a>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </section>  
+    
+    <footer id="footer">
+        <a href="https://mrafat.com" style="display:none">THIS WEBSITE WAS DEVELOPED BY MOHAMMED RAFAT. https://mrafat.com</a>
+        <div class="container footerWrapper">
+            <div class="row">
+                <div class="footerContent">
+                    <div class="footerContactInfo">
+                        <h1>Contact Info</h1>
+                        <div class="footerContacts">
+
+                            <li class="footerContact"><img src="./content/phone.png" alt="phone logo" class="footerContactLogo">(484)-557-1456</li>
+                            <li class="footerContact"><img src="./content/mail.png" alt="mail logo" class="footerContactLogo">krahman@comcast.net</li>
+                            <li class="footerContact"><img src="./content/location.png" alt="mail logo" class="footerContactLogo">2502 Township Line Road, Havertown, PA 19083</li>           
+                        </div>
+                    </div>
+                    <div class="footerQuickLinks">
+                        <h1>Quick Links</h1>
+                        <div class="footerLinks">
+                            <a href="./pages/prayertime.html" class="footerLink">Prayer Time</a>
+                            <a href="#school" class="footerLink">Education</a>
+                            <a href="#aboutUs" class="footerLink">About Us</a>
+                            <a href="#services" class="footerLink">Services</a>
+                            <a href="#donate" class=" footerLink">Donate</a>    
+                        </div>  
+                    </div>
+                    <div class="footerMap">
+                        <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1528.9485091985443!2d-75.30030200875518!3d39.966055096927334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c1a6114e29ed%3A0x26e389362d5fd0fe!2s2502%20Township%20Line%20Rd%2C%20Havertown%2C%20PA%2019083!5e0!3m2!1sen!2sus!4v1673996337886!5m2!1sen!2sus" style="border: none;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <li class="footerNote">© 2024 Islamic Center of Delaware County</li>
+            </div>
+        </div>
+    </footer>
+    <div class="visitors">
+        <img src="./content/userGrowth.png" alt="user growth image">
+        <div class="visitorsText">
+            <li>Total Visitors</li>
+            <li id="visitorCounter"></li>
+        </div>
+
+    </div>
+</body>
+</html>
