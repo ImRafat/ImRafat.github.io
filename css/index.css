@@ -26,7 +26,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #1a4f77;    
+    background-color: #0e162b;    
     border-radius: 1px;       
 }
 
@@ -102,8 +102,21 @@ button{
 
 /**************************************NAVIGATION SECTION************************************************/
 
+.contactMenu{
+    background-color: #0e162b;
+    color:white;
+    font-weight: bold;
+    display: Flex;
+    justify-content: space-around;
+    align-items: center;
+    height:75px;
+}
+
+.contactLogos{
+    background-color: #00A693;
+}
+
 nav{
-    /* background-color: #1a4f77; */
     background-color: white;
     position:fixed;    
     width:100%;
@@ -125,11 +138,8 @@ nav{
 
 .logo{    
     max-width:500px;
-    max-height:225px;  
+    max-height:150px;  
     font-size: 50px;
-    color:#00A693;
-    font-weight: bold;      
-    
 }
 
 .logo:hover{
@@ -139,7 +149,7 @@ nav{
 .navigationLink{
     padding:24px;
     font-size: 16px;
-    color: black;
+    color: #2DC55F;
     font-weight: bold;
     transition:ease 200ms;
     -webkit-transition: ease 200ms;
@@ -149,10 +159,10 @@ nav{
     color:black;
 }
 
-.customDonate{
+.customContact{
     /* background-color: #ff8b07; */
     /* background-color: #ffcc00; */
-    background-color:#00A693;
+    background-color:#0e162b;
     color:white;
     font-weight: bold;
     padding:19.2px;
@@ -162,7 +172,7 @@ nav{
     -webkit-transition: ease 200ms;
 }
 
-.customDonate:hover{
+.customContact:hover{
     background-color: rgb(0,166,147,.8);
     color:white;
 }
