@@ -18,14 +18,18 @@
     <a href="https://mrafat.com" style="display:none">THIS WEBSITE WAS DEVELOPED BY MOHAMMED RAFAT. https://mrafat.com</a>
     <section id="landingContent">
         <nav>
-            <div class="contactMenu">
-                <div class="phoneContainer">
-                    <img src="content/phone gif.gif" alt="" class="phoneLogo contactLogos">
-                    <li class="phone"> Call Us: (856)-813-9783</li>
-                </div>
-                <div class="emailContainer">
-                    <img src="content/email gif.gif" alt="" class="emailLogo contactLogos">
-                    <li class="email">Email Us: SJHM@hotmail.com</li>
+            <div class="contactMenu container">
+                <div class="row">
+                    <div class="contactContent">
+                    <div class="phoneContainer contactContainer">
+                        <img src="content/phone gif.gif" alt="" class="phoneLogo contactLogos">
+                        <li class="phone"> Call Us: (856)-813-9783</li>
+                    </div>
+                    <div class="emailContainer contactContainer">
+                        <img src="content/email gif.gif" alt="" class="emailLogo contactLogos">
+                        <li class="email">Email Us: SJHM@hotmail.com</li>
+                    </div>
+                    </div>
                 </div>
             </div>
             <div class="container">
@@ -68,100 +72,7 @@
         <div class="landingTheme">
             <div class="container">
                 <div class="landingThemeContent row">
-                    <div class="swiper">
-                          <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <!-- <div class="swiper-slide mainSlide" id="mainSlide" >
-                                <img src="./content/family night.jpeg" alt="" class="mainSliderImage">
-                            </div>     -->         
-                            <div class="swiper-slide firstSlide" id="firstSlide" >
-                                <img src="./content/mosque2.jpg" alt="mosque picture" class="sliderImage">
-                                <div class="firstSlideContent">
-                                    <h1>Hadith</h1>
-                                    <p class="staticHadith">“Whoever opens a way to a charitable deed is like the one that has done this good deed (himself).”</p>                                    
-                                </div>
-                            </div>
-                            <!-- <div class="swiper-slide secondSlide" id="secondSlide">
-                                <div class="secondSlideContent">                                    
-                                    <img src="./content/MasjidOpening.png" alt="mosque opening picture" class="secondSliderImage">                                    
-                                </div>
-                            </div> -->
-                            <div class="swiper-slide secondSlide" id="secondSlide">
-                                <div class="secondSlideContent">                                    
-                                    <img src="./content/brothers.jpg" alt="brothers prayer section" class="secondSliderImage">                                    
-                                </div>
-                            </div>
-                            <div class="swiper-slide thirdSlide" id="thirdSlide">
-                                <div class="thirdSlideContent">                        
-                                    <img src="./content/sisters.jpg" alt="sisters prayer section" class="thirdSliderImage">                                                 
-                                </div>
-                            </div>                          
-                            <div class="swiper-slide fourthSlide" id="fourthSlide">
-                                <div class="fourthSlideContent">                                    
-                                    <img src="./content/masjid1.jpg" alt="people in the mosque" class="fourthSliderImage">  
-                                </div>
-                            </div>  
-
-                          </div>
-                          <!-- If we need pagination -->
-                          <div class="swiper-pagination"></div>
-                        
-                          <!-- If we need navigation buttons -->
-                          <div class="swiper-button-prev swiperArrows" id="buttonPrevious"></div>
-                          <div class="swiper-button-next swiperArrows" id="buttonNext" onClick="return false;"></div>                        
-                    </div>                    
-                    <div class="prayerSchedule" id="prayerSchedule">
-                        <ul class="sunrise">
-                            <li class="logoPrayer"><img src="./content/sunrise.png" alt="sunrise logo" class="prayerLogo"> <span class="prayerName">Sunrise</span> </li>
-                            <li class="sunriseTime"></li>
-                        </ul>
-                        <ul class="prayerColumnHeaders">
-                            <li class="salahHeader">Salah</li>
-                            <li class="beginsHeader">Begins</li>
-                            <li class="iqamahHeader">Iqamah</li>
-                        </ul>
-                        <ul class="prayerContent defaultFontSize">
-                            <ul class="prayerTime fajrPrayer">
-                                <li class="logoPrayer"><img src="./content/dawn.png" alt="dawn logo" class="prayerLogo"><span class="prayerName"> Fajr</span></li>
-                                <li class="begins"></li>
-                                <li class="iqamah"></li>
-                            </ul>
-                            <ul class="prayerTime dhuhrPrayer">
-                                <li class="logoPrayer"><img src="./content/day.png" alt="day time logo" class="prayerLogo"><span class="prayerName">Dhuhr</span></li>
-                                <li class="begins"></li>
-                                <li class="iqamah"></li>
-                            </ul>
-                            <ul class="prayerTime asrPrayer">
-                                <li class="logoPrayer"><img src="./content/evening.png" alt="evening logo" class="prayerLogo"><span class="prayerName">Asr</span></li>
-                                <li class="begins"></li>
-                                <li class="iqamah"></li>
-                            </ul>
-                            <ul class="prayerTime maghribPrayer">
-                                <li class="logoPrayer"><img src="./content/sunset.png" alt="sunset logo" class="prayerLogo"><span class="prayerName">Maghrib</span></li>
-                                <li class="begins"></li>
-                                <li class="iqamah"></li>
-                            </ul>
-                            <ul class="prayerTime ishaPrayer">
-                                <li class="logoPrayer"><img src="./content/night.png" alt="night time logo" class="prayerLogo"><span class="prayerName">Isha</span></li>
-                                <li class="begins"></li>
-                                <li class="iqamah"></li>
-                            </ul>
-                        </ul>
-                        <div class="jumuahSchedule">
-                            <!-- <h1 class="jumuahHeader">Jumuah</h1> -->
-                            <ul class="jumuahContent defaultFontSize">
-                                <!-- <ul class="jumuahSection">
-                                    <li class="khutbah">Khutbah</li>
-                                    <li class="jumuahTime">1:10 PM</li>
-                                </ul> -->
-                                <ul class="jumuahSection">
-                                    <li class="jumuahPrayer jumuahHeader logoPrayer">Jumuah</li>
-                                    <li class="jumuahTime begins"></li>
-                                    <li class="iqamah"></li>
-                                </ul>                                
-                            </ul>
-                        </div>
-                    </div>
+                    <li>content will go here</li>
                 </div>
             </div>
         </div>
@@ -200,26 +111,18 @@
             </div>
         </div>
     </section>
--->
+
     <section id="aboutUs">
             <div class="container">                                
                 <div class="row aboutusContent">                 
                     <div class="sectionContent">  
                         <h1 class="sectionHeader">About Us</h1>
-                        <p class="sectionDescription">                   
-                            ICDC is a reliable Islamic Center to follow the Quran and Sunnah. Islamic Center of Delaware County is a non-profit 
-                            tax-exempt organization that has been formed exclusively for educational, religious, 
-                            and social purposes. It is registered with the Internal Revenue Service under revenue code 501(c)(3). All of ICDC's activities are in accordance with the teachings of the 
-                            Quran and following the teachings and traditions of Prophet Muhammad (Peace Be Upon Him). Please donate generously to help us 
-                            build/maintain this center so that we can spread the knowledge of Islam to the community and provide a location people can come together to learn and grow to become good practicing Muslims. We are located right across from the large 
-                            shopping center at township line road.
-                        </p>   
-                        <a class="embeddedLink" href="https://goo.gl/maps/NydAewC7qgQLpDuh6" target="__blank"><img src="./content/location.png" class="locationImage">Islamic Center of Delaware County</a>
+                        
                     </div>                    
                 </div>
             </div>
-    </section>
-
+    </section>-->
+<!--
     <section id="donate">
         <div class="container">
             <div class="row donateContent">
@@ -379,5 +282,6 @@
         </div>
 
     </div>
+-->
 </body>
 </html>
