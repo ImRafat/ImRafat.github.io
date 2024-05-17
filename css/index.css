@@ -109,7 +109,7 @@ button{
     display: Flex;    
     justify-content: space-around;
     align-items: center;
-    height:75px;
+    height:35px;
 }
 
 .contactContainer{
@@ -300,9 +300,9 @@ nav{
 .landingTheme{
     width:100vw; 
     max-width: 100vw;
-    margin-top: 190px;      
-    height:calc(100vh - 190px);
-    max-height:calc(100vh - 190px);
+    margin-top: 130px;      
+    /* height:calc(100vh - 150px);
+    max-height:calc(100vh - 150px); */
 }
 
 .landingThemeContent{
@@ -314,7 +314,7 @@ nav{
 }
 
 .houses{
-    height:calc(100vh - 190px);
+    height:calc(100vh - 130px);
     width: 100%;
     width:100vw; 
     max-width: 100vw;
