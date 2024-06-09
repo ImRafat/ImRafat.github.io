@@ -940,7 +940,7 @@ nav{
 /*******************************************************FOOTER SECTION**************************************/
 footer{
     /* background-color: #1a2421; */
-    background-color: #1B1B1B;
+    background-color: #0e162b;
     height: 300px;
     height:100%;
     margin-top: 100px;
@@ -1052,8 +1052,10 @@ footer{
 }
 
 .footerContactLogo{
-    width:40px;
-    padding-right: 10px;
+    margin-right: 10px;
+    background-color: white;
+    height:25px;
+    border-radius: 5px;
 }
 
 .footerNote{
