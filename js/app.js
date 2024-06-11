@@ -19,4 +19,4 @@ function showNextImages() {
 }
 
 // Change images every 5 seconds
-setInterval(showNextImages, 5000);
+setInterval(showNextImages, 2500);

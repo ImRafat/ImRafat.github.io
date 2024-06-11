@@ -347,214 +347,37 @@ nav{
     object-fit: cover;
 }
 
-.prayerSchedule{
-    width:32%;
-    min-width: 350px;
-    height:525px;
-    border:solid 1px #E6ECF8;
-    border-radius: 10px;
-    padding:1%;
-    /* box-shadow:  2px 5px 0px rgb(240,250,243,.7); */
-    box-shadow: 0px 2px 5px 0px #e6ecf8;
-    margin:3% 1%;
-}
-
-.prayerLogo{
-    width:50px;
-}
-
-.sunrise{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    border:solid 1px #e6ecf8;
-    font-weight:800;
-    font-size: 18px;
-}
-
-.logoPrayer{
-    display:flex;
-    align-items: center;
-    width:30%;
-}
-
-.beginsHeader{
-    width:30%;
-    padding:0% 2%;
-    text-align: right;
-}
-
-.salahHeader{
-    width:30%;
-    text-align: center;
-}
-
-.iqamahHeader{
-    width:30%;
-    text-align: right;
-    padding:0% 3%;
-}
-
-.prayerColumnHeaders{
-    display:flex;
-    justify-content: space-between;
-    font-weight:bold;
-    margin: 10px 0px;
-    color:#00A693;
-}
-
-.prayerName{
-    padding-left:10px;
-}
-
-.prayerTime{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 800;
-    border-radius: 15px;
-    border:solid 1px #e6ecf8;
-    margin: 10px 0px;
-    padding: 0% 2%;
-    /* background-color: rgb(240,250,243,1); */
-}
-
-
-.begins{
-    text-align: right;
-    width:30%;
-}
-
-.iqamah{
-    width:30%;
-    text-align: right;
-}
-
-/* .ishaPrayer{
-    background-color: rgb(240,250,243,1);
-} */
-
-.jumuahHeader{
-    text-align: center;
-    color: #00A693;
-    font-size: 24px;
-}
-
-.jumuahSchedule{    
-    border:solid 1px #e6ecf8;
-}
-
-.jumuahSection{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:1% 2%;
-    font-weight: 800;
-}
-
-.swiper {
-    width:64%;
-    min-width:350px;
-    min-height:525px;
-    margin:3% 1%;
-}
-
-.firstSlide{
-    position:relative;
-}
-
-/* .firstSlide::after{
-    content:'';
-    display:block;
-    position:absolute;
-    top:0;
-    left:0;
-    background: linear-gradient(to right, rgba(255,255,255,.7),rgba(255,255,255,.5),rgba(255,255,255,.4),rgba(255,255,255,.2));
-    height:100%;
-} */
-
-.sliderImage{    
-    width:100%;
-    height:100%;
-    position: absolute;
-    /* object-fit: cover; */
-    min-height: 525px;
-}
-
-.mainSliderImage{    
-    width:100%;
-    height:100%;
-    position: absolute;
-    object-fit:contain;
-    min-height: 525px;
-}
-
-.secondSliderImage{    
-    width:100%;
-    height:100%;
-    position: absolute;
-    object-fit: cover;
-    min-height: 525px;
-}
-
-.thirdSliderImage{    
-    width:100%;
-    height:100%;
-    position: absolute;
-    object-fit:cover;
-    min-height: 525px;
-}
-
-.fourthSliderImage{    
-    width:100%;
-    height:100%;
-    position: absolute;
-    object-fit:cover; 
-    min-height: 525px;
-}
-
-.firstSlideContent{
-    position:absolute;
-
-    min-height: 250px;
-    height:100%;
-    width:50%;    
-    z-index: 10;
-    /* background: linear-gradient(to right, rgba(255,255,255,.9));  */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding:10px;
-    margin-left: 10%;
-    margin-top: 10%;
-    /* background-color: white; */
-    /* opacity: .7; */
-}
-
-.firstSlideContent::after{
-    content:'';
-    display:block;
-    position:absolute;
-    top:0;
-    left:0;
-    background: linear-gradient(to bottom, rgba(255,255,255,.3),rgba(255,255,255,.3),rgba(255,255,255,.3),rgba(255,255,255,.3));
-    height:100%;
-    width:100%;
-} 
-
-
-.staticHadith {
-    font-style: italic;
-    font-weight: bold;
-    margin-top: 10px;
-    text-align: center;
-    line-height: 2;
-    
-}
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .landingThemeContent {
+    overflow: hidden; /* Ensures the hidden part of the text doesn't show up */
+  }
+  
+  .themeText li {
+    display: block;
+    animation: slide-in 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .themeText .landingHeader:nth-child(1),
+  .themeText .landingHeader:nth-child(2) {
+    animation-delay: 0s; /* No delay for the first two landingHeader elements */
+  }
+  
+  .themeText .landingText:nth-child(3),
+  .themeText .landingText:nth-child(4) {
+    animation-delay: 1.5s; /* Delay for the landingText elements to start after the headers */
+  }
+  
 
 /**************************************ABOUT US SECTION************************************************/
 #aboutUs{
