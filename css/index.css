@@ -381,18 +381,18 @@ nav{
 
 /**************************************ABOUT US SECTION************************************************/
 #aboutUs{
-    /* background-color: #FFFFF0; */
-    /* background-color: #f0faf3; */
-    background: linear-gradient(to top,rgb(240,250,243,.1),rgb(240,250,243,.4), rgb(240,250,243,.7), rgb(240,250,243,1));
-    border-radius: 40px 40px 0 0;
-    margin:20px 1%;
+    background-image: url(../content/curved.jpg);
+    background-size: cover;
 }
 
-.aboutusContent{
+.bothPanel{
     display:flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items:normal;
+}
+
+.leftPanel{
+    margin-top: 30px;
 }
 
 .aboutusHeader{
