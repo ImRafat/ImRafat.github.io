@@ -159,9 +159,8 @@ nav{
 }
 
 .logo{    
-    max-width:500px;
-    max-height:150px;  
-    font-size: 50px;
+    max-width:150px;
+    max-height:150px;      
 }
 
 .logo:hover{
@@ -744,7 +743,10 @@ body{
 @media(max-width:1378px)
 {
     .noteContent{
-        width: 48%;
+        width: 48%;        
+    }
+    .notePicture{
+        height:70%;
     }
 }
 /*****************************************************************************************/
@@ -904,21 +906,11 @@ body{
 
 @media(max-width:600px){
    .logo{
-    margin-left: -10%;
+    max-width: 125px;
+    max-height: 125px;
    }
 }
 
-@media(max-width:500px){
-    .logo{
-     margin-left: -14%;
-    }
- }
-
- @media(max-width:350px){
-    .logo{
-     margin-left: -20%;
-    }
- }
 
 
 

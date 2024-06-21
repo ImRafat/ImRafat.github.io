@@ -18,5 +18,13 @@ function showNextImages() {
     imageContainer.style.transform = newTransformValue;
 }
 
+function openMenu(){
+    document.body.classList +=" menu--open";
+}
+
+function closeMenu(){
+    document.body.classList.remove('menu--open');
+}
+
 // Change images every 5 seconds
 setInterval(showNextImages, 2500);
